@@ -22,6 +22,7 @@ I do not own any rights to any pictures used in app. They are used for education
 
 Made all 5 files. Time To program them.
 
+Home Screen
 ![Home Screen](https://github.com/Dajnowicz/Seahawks_Application2019/blob/master/psd/SEAHWKS%20HOME.jpg)
 ## 2. Programming 
 ...
