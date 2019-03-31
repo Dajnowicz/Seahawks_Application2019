@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="SeahawksApp.Photos"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SeahawksApp"
+             mc:Ignorable="d" 
+          d:DesignHeight="388" d:DesignWidth="718">
+
+    <Grid Margin="0,0,0,-307" Background="Black">
+        <ScrollViewer Margin="0,0,0,205" Background="Black">
+
+            <ItemsControl >
+                <DockPanel Height="60" LastChildFill="False">
+                    <TextBlock Height="45" TextWrapping="Wrap" Text="Seahawks Gdynia " VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Fragua" FontWeight="Bold" FontSize="24" Foreground="White" Margin="68,0,0,0"/>
+                    <TextBlock Height="45" TextWrapping="Wrap" Text="VS " VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Fragua" FontWeight="Bold" FontSize="24" Foreground="#FFFFCA03"/>
+                    <TextBlock Height="45" TextWrapping="Wrap" Text="Wilki Lodzkie" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Fragua" FontWeight="Bold" FontSize="24" Foreground="White"/>
+
+                </DockPanel>
+                <DockPanel Height="190" LastChildFill="False" Margin="0,0,0,30">
+                    <Image VerticalAlignment="Top" Source="C:\Users\Lenovo\Desktop\seahawks app\Photos\1.jpg" Margin="72,0,30,0"/>
+                    <Image VerticalAlignment="Top" Source="C:\Users\Lenovo\Desktop\seahawks app\Photos\2.jpg" Margin="0,0,30,0"/>
+                </DockPanel>
+                <DockPanel Height="190" LastChildFill="False" Margin="0,0,0,30">
+                    <Image VerticalAlignment="Top" Source="C:\Users\Lenovo\Desktop\seahawks app\Photos\3.jpg" Margin="72,0,30,0"/>
+                    <Image VerticalAlignment="Top" Source="C:\Users\Lenovo\Desktop\seahawks app\Photos\4.jpg" Margin="0,0,30,0"/>
+                </DockPanel>
+                <DockPanel Height="190" LastChildFill="False" Margin="0,0,0,30">
+                    <Image VerticalAlignment="Top" Source="C:\Users\Lenovo\Desktop\seahawks app\Photos\5.jpg" Margin="72,0,30,0"/>
+                    <Image VerticalAlignment="Top" Source="C:\Users\Lenovo\Desktop\seahawks app\Photos\6.jpg" Margin="0,0,30,0"/>
+                </DockPanel>
+            </ItemsControl>
+
+        </ScrollViewer>
+    </Grid>
+
+</UserControl>
+
