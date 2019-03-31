@@ -50,13 +50,20 @@ Next Game
 
 ## 2. Programming 
 
-Did most of windows. Only two left.
+Only two windows left.
+
 So programming is bit harder than I initially though. However I am learning lots of stuff about WPF and having plenty of fun. :)
+
 **IDEAS**
+
 Different type of Scroller on Photos Section.
+
 Add more Photos. 
+
 Add menu in photos section in order to change pictures from different games.
+
 Change hover effect on menu. 
+
 To be contiuned..
 ## 3. Testing 
 ...
