@@ -10,7 +10,7 @@ I do not own any rights to any pictures used in app. They are used for education
 
 ~~1.Making PSD files in Photoshop for every window in application.~~  **DONE** *28.03*
 
-2.Program PSD into Application.
+~~2.Program PSD~~ into Application. **NEARLY DONE** Have to add two more windows.
 
 3.Test the bugs.
 
@@ -49,7 +49,15 @@ Next Game
 
 
 ## 2. Programming 
-...
+
+Did most of windows. Only two left.
+So programming is bit harder than I initially though. However I am learning lots of stuff about WPF and having plenty of fun. :)
+**IDEAS**
+Different type of Scroller on Photos Section.
+Add more Photos. 
+Add menu in photos section in order to change pictures from different games.
+Change hover effect on menu. 
+To be contiuned..
 ## 3. Testing 
 ...
 ## 4. New Features
