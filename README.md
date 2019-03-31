@@ -25,27 +25,27 @@ Made all 5 files. Time To program them.
 
 Home Screen
 
-![Home Screen](https://github.com/Dajnowicz/Seahawks_Application2019/blob/master/psd/SEAHWKS%20HOME.jpg)
+![Home Screen](https://github.com/Dajnowicz/Seahawks_Application2019/blob/master/Files/psd/SEAHWKS%20HOME.jpg)
 
 History
 
-![Home Screen](https://github.com/Dajnowicz/Seahawks_Application2019/blob/master/psd/SEAHWKS%20History.jpg)
+![Home Screen](https://github.com/Dajnowicz/Seahawks_Application2019/blob/master/Files/psd/SEAHWKS%20History.jpg)
 
 Players (Division for def and off)
 
-![Home Screen](https://github.com/Dajnowicz/Seahawks_Application2019/blob/master/psd/SEAHWKS%20PLAYERS.jpg)
+![Home Screen](https://github.com/Dajnowicz/Seahawks_Application2019/blob/master/Files/psd/SEAHWKS%20PLAYERS.jpg)
 
 Players_Offensive (Same look as Defensive)
 
-![Home Screen](https://github.com/Dajnowicz/Seahawks_Application2019/blob/master/psd/SEAHWKS%20PLAYERS_OFFENSIVE.jpg)
+![Home Screen](https://github.com/Dajnowicz/Seahawks_Application2019/blob/master/Files/psd/SEAHWKS%20PLAYERS_OFFENSIVE.jpg)
 
 Photos
 
-![Home Screen](https://github.com/Dajnowicz/Seahawks_Application2019/blob/master/psd/SEAHWKS%20PHOTOS.jpg)
+![Home Screen](https://github.com/Dajnowicz/Seahawks_Application2019/blob/master/Files/psd/SEAHWKS%20PHOTOS.jpg)
 
 Next Game
 
-![Home Screen](https://github.com/Dajnowicz/Seahawks_Application2019/blob/master/psd/SEAHWKS%20NEXT_GAME.jpg)
+![Home Screen](https://github.com/Dajnowicz/Seahawks_Application2019/blob/master/Files/psd/SEAHWKS%20NEXT_GAME.jpg)
 
 
 ## 2. Programming 
