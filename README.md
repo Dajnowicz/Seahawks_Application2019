@@ -95,6 +95,8 @@ Changed the basic scroller to my custom one. Code can by found in [this director
 
 First deploy. App can be found [this directory](https://github.com/Dajnowicz/Seahawks_Application2019/tree/master/SeahawksApp/Deploy).
 
+![](https://github.com/Dajnowicz/Seahawks_Application2019/blob/master/SeahawksApp/Files/Video/SeahawksApp.gif)
+
 ## 4. New Features
 
 For next versions of apps I am planning to do implement these features.
