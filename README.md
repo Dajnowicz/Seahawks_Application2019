@@ -10,13 +10,15 @@ I do not own any rights to any pictures used in app. They are used for education
 
 ~~1.Making PSD files in Photoshop for every window in application.~~  **DONE** *28.03*
 
-~~2.Program PSD~~ into Application. **NEARLY DONE** Have to add two more windows.
+~~2.Program PSD into Application.~~ **DONE** *06.04*
 
-3.Test the bugs.
+~~3.Test the bugs.~~ **DONE** *06.04*
 
-4.Add new features like proper calendar, full table with scores.
+~~4. Deploy~~~ **DONE** 
 
-5.Deploy
+Version 1.0 *06.04*
+
+5. New Features (Version 2.0)
 
 ## 1. Photoshop Files
 
@@ -25,46 +27,72 @@ Made all 5 files. Time To program them.
 
 Home Screen
 
-![Home Screen](https://github.com/Dajnowicz/Seahawks_Application2019/blob/master/Files/psd/SEAHWKS%20HOME.jpg)
+![Home Screen](https://github.com/Dajnowicz/Seahawks_Application2019/blob/master/SeahawksApp/Files/psd/SEAHWKS%20HOME.jpg)
 
 History
 
-![Home Screen](https://github.com/Dajnowicz/Seahawks_Application2019/blob/master/Files/psd/SEAHWKS%20History.jpg)
+![Home Screen](https://github.com/Dajnowicz/Seahawks_Application2019/blob/master/SeahawksApp/Files/psd/SEAHWKS%20History.jpg)
 
 Players (Division for def and off)
 
-![Home Screen](https://github.com/Dajnowicz/Seahawks_Application2019/blob/master/Files/psd/SEAHWKS%20PLAYERS.jpg)
+![Home Screen](https://github.com/Dajnowicz/Seahawks_Application2019/blob/master/SeahawksApp/Files/psd/SEAHWKS%20PLAYERS.jpg)
 
 Players_Offensive (Same look as Defensive)
 
-![Home Screen](https://github.com/Dajnowicz/Seahawks_Application2019/blob/master/Files/psd/SEAHWKS%20PLAYERS_OFFENSIVE.jpg)
+![Home Screen](https://github.com/Dajnowicz/Seahawks_Application2019/blob/master/SeahawksApp/Files/psd/SEAHWKS%20PLAYERS_OFFENSIVE.jpg)
 
 Photos
 
-![Home Screen](https://github.com/Dajnowicz/Seahawks_Application2019/blob/master/Files/psd/SEAHWKS%20PHOTOS.jpg)
+![Home Screen](https://github.com/Dajnowicz/Seahawks_Application2019/blob/master/SeahawksApp/Files/psd/SEAHWKS%20PHOTOS.jpg)
 
 Next Game
 
-![Home Screen](https://github.com/Dajnowicz/Seahawks_Application2019/blob/master/Files/psd/SEAHWKS%20NEXT_GAME.jpg)
+![Home Screen](https://github.com/Dajnowicz/Seahawks_Application2019/blob/master/SeahawksApp/Files/psd/SEAHWKS%20NEXT_GAME.jpg)
 
 
 ## 2. Programming 
 
-Only two windows left.
+A little bit changed project in process of production. I have added different sizes of fonts, hover effects which caused diffrent placement of containers. 
 
-So programming is bit harder than I initially though. However I am learning lots of stuff about WPF and having plenty of fun. :)
+**Interesting Parts Of Code**
+
+*Button Style*
+
+I did not like the basic hover effect built in the wpf library so i had to chaned it. 
+```
+...
+<ControlTemplate TargetType="Button">
+                        <Border Name="border" 
+                            Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Cursor" Value="Hand"/>
+                                <Setter Property="Grid.ZIndex" Value="1"/>
+                                <Setter Property="RenderTransform">
+                                    <Setter.Value>
+                                        <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                    ...
+```
+
+*Players Carousel*
+I used basic switch case to change number of players. Thats how i got them to rotate and do full run from 0 to n where n is equals to number of players. 
+
+*Scroll View*
+Changed the basic scroller to my custom one. Code can by found in [this directory](https://github.com/Dajnowicz/Seahawks_Application2019/blob/master/SeahawksApp/Resources.xaml)
 
 **IDEAS**
+- [x] \(Optional) Different type of Scroller on Photos Section.
+- [x] \(Optional) Add more Photos. 
+- [ ] \(Optional) Add menu in photos section in order to change pictures from different games.
+- [x] \(Optional) Change hover effect on menu. 
 
-Different type of Scroller on Photos Section.
-
-Add more Photos. 
-
-Add menu in photos section in order to change pictures from different games.
-
-Change hover effect on menu. 
-
-To be contiuned..
 ## 3. Testing 
 ...
 ## 4. New Features
