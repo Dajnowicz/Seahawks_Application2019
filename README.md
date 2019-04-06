@@ -59,7 +59,7 @@ A little bit changed project in process of production. I have added different si
 
 *Button Style*
 
-I did not like the basic hover effect built in the wpf library so i had to chaned it. 
+Changed the basic hover effect built into wpf library.
 ```XAML
 ...
 <ControlTemplate TargetType="Button">
@@ -84,7 +84,7 @@ I did not like the basic hover effect built in the wpf library so i had to chane
 
 *Players Carousel*
 
-Used basic switch case to change number of players. Thats how i got them to rotate and do full run from 0 to n where n is equals to number of players. 
+Used basic switch case to change number of players. Thats how I got them to do full run from 0 to n where n equals to number of players. 
 
 *Scroll View*
 
@@ -99,7 +99,8 @@ First deploy. App can be found [this directory](https://github.com/Dajnowicz/Sea
 
 ## 4. New Features
 
-For next versions of apps I am planning to do implement these features.
+For next versions of apps I am planning to implement these features.
+
 **IDEAS**
 - [x]  Different type of Scroller on Photos Section.
 - [x]  Add more Photos. 
