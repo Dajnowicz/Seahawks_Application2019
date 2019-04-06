@@ -7,17 +7,17 @@
              mc:Ignorable="d" 
                d:DesignHeight="388" d:DesignWidth="718">
     <Grid Background="Black">
-        <DockPanel HorizontalAlignment="Left" Height="198" LastChildFill="False" VerticalAlignment="Top" Width="660" Margin="30,0,0,0">
+        <DockPanel HorizontalAlignment="Left" Height="198" LastChildFill="False" VerticalAlignment="Top" Width="718">
             <DockPanel.Background>
-                <ImageBrush ImageSource="C:\Users\Lenovo\Desktop\seahawks app\NextGame\smoke.png" Stretch="UniformToFill"/>
+                <ImageBrush ImageSource="Files/NextGame/smoke.png" Stretch="UniformToFill"/>
             </DockPanel.Background>
-            <Image VerticalAlignment="Top" Source="C:\Users\Lenovo\Desktop\seahawks app\NextGame\Tychy.png"/>
+            <Image VerticalAlignment="Top" Source="Files/NextGame/Tychy.png" Margin="15,0,0,0"/>
             <StackPanel Height="140" VerticalAlignment="Center" Width="313" Margin="0,25,0,0" HorizontalAlignment="Center">
                 <TextBlock TextWrapping="Wrap" Text="Seahawks Gdynia" FontFamily="Fragua" FontWeight="Bold" FontSize="36" TextAlignment="Center" Foreground="#FFFFCA04"/>
                 <TextBlock TextWrapping="Wrap" Text="VS" FontFamily="Fragua" FontWeight="Bold" FontSize="36" TextAlignment="Center" Foreground="White"/>
                 <TextBlock TextWrapping="Wrap" Text="Tychy Falcons" FontFamily="Fragua" FontWeight="Bold" FontSize="36" TextAlignment="Center" Foreground="#FF2E3192"/>
             </StackPanel>
-            <Image VerticalAlignment="Top" Source="C:\Users\Lenovo\Desktop\seahawks app\NextGame\Seahawks.png"/>
+            <Image VerticalAlignment="Top" Source="Files/NextGame/Seahawks.png"/>
         </DockPanel>
 
         <StackPanel HorizontalAlignment="Left" Height="173" Margin="0,215,0,0" VerticalAlignment="Top" Width="718">

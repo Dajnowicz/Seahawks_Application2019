@@ -33,3 +33,7 @@ C:\Users\Lenovo\Desktop\GIT\Seahawks_Application2019\SeahawksApp\obj\Release\Sea
 C:\Users\Lenovo\Desktop\GIT\Seahawks_Application2019\SeahawksApp\obj\Release\SeahawksApp.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo\Desktop\GIT\Seahawks_Application2019\SeahawksApp\obj\Release\SeahawksApp.exe
 C:\Users\Lenovo\Desktop\GIT\Seahawks_Application2019\SeahawksApp\obj\Release\SeahawksApp.pdb
+C:\Users\Lenovo\Desktop\GIT\Seahawks_Application2019\SeahawksApp\bin\Release\SeahawksApp.exe.manifest
+C:\Users\Lenovo\Desktop\GIT\Seahawks_Application2019\SeahawksApp\bin\Release\SeahawksApp.application
+C:\Users\Lenovo\Desktop\GIT\Seahawks_Application2019\SeahawksApp\obj\Release\SeahawksApp.exe.manifest
+C:\Users\Lenovo\Desktop\GIT\Seahawks_Application2019\SeahawksApp\obj\Release\SeahawksApp.application
