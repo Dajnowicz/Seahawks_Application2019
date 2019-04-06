@@ -14,7 +14,7 @@ I do not own any rights to any pictures used in app. They are used for education
 
 ~~3.Test the bugs.~~ **DONE** *06.04*
 
-~~4. Deploy~~ **DONE** 
+~~4. Deploy~~ **DONE** *06.04*
 
 Version 1.0 *06.04*
 
@@ -84,23 +84,24 @@ I did not like the basic hover effect built in the wpf library so i had to chane
 
 *Players Carousel*
 
-used basic switch case to change number of players. Thats how i got them to rotate and do full run from 0 to n where n is equals to number of players. 
+Used basic switch case to change number of players. Thats how i got them to rotate and do full run from 0 to n where n is equals to number of players. 
 
 *Scroll View*
 
-Changed the basic scroller to my custom one. Code can by found in [this directory](https://github.com/Dajnowicz/Seahawks_Application2019/blob/master/SeahawksApp/Resources.xaml)
+Changed the basic scroller to my custom one. Code can by found in [this directory](https://github.com/Dajnowicz/Seahawks_Application2019/blob/master/SeahawksApp/Resources.xaml).
 
-**IDEAS**
-- [x] \(Optional) Different type of Scroller on Photos Section.
-- [x] \(Optional) Add more Photos. 
-- [ ] \(Optional) Add menu in photos section in order to change pictures from different games.
-- [x] \(Optional) Change hover effect on menu. 
 
-## 3. Testing 
-...
+## 3. Deploy
+
+First deploy. App can be found [this directory](https://github.com/Dajnowicz/Seahawks_Application2019/blob/master/SeahawksApp/Resources.xaml).
 ## 4. New Features
-...
-## 5. Deploy
-...
+
+For next versions of apps I am planning to do implement these features.
+**IDEAS**
+- [x] \ Different type of Scroller on Photos Section.
+- [x] \Add more Photos. 
+- [ ] \ Add menu in photos section in order to change pictures from different games.
+- [x] \ Change hover effect on menu. 
+- [ ] \ Add table with all scores from the league.
 
 
