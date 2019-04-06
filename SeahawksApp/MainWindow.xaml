@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SeahawksApp"
         mc:Ignorable="d"
-        Title="Seahawks App" Height="517" Width="956" WindowStyle="None" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Icon="C:\Users\Lenovo\Desktop\seahawks app\HOME\icon.png">
+        Title="Seahawks App" Height="517" Width="956" WindowStyle="None" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Icon="Files/HOME/icon.png">
     <Window.Resources>
         <DataTemplate x:Name="HomeTemplate" DataType="{x:Type local:Home}"/>
         <DataTemplate x:Name="HistoryTemplate" DataType="{x:Type local:History}"/>
@@ -13,31 +13,107 @@
         <DataTemplate x:Name="PhotosTemplate" DataType="{x:Type local:Photos}"/>
         <DataTemplate x:Name="ResultsTemplate" DataType="{x:Type local:Results}"/>
 
+        <Style x:Key="ScaleStyle" TargetType="TextBlock">
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Grid.ZIndex" Value="1"/>
+                    <Setter Property="RenderTransform">
+                        <Setter.Value>
+                            <ScaleTransform ScaleX="1.1" ScaleY="1.1"/>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+
+        <Style x:Key="ScaleStyleImage" TargetType="Image">
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Grid.ZIndex" Value="1"/>
+                    <Setter Property="RenderTransform">
+                        <Setter.Value>
+                            <ScaleTransform ScaleX="1.5" ScaleY="1.5"/>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="MyButtonStyle" TargetType="Button">
+            <Setter Property="OverridesDefaultStyle" Value="True"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Name="border" 
+                            Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Cursor" Value="Hand"/>
+                                <Setter Property="Grid.ZIndex" Value="1"/>
+                                <Setter Property="RenderTransform">
+                                    <Setter.Value>
+                                        <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+
     </Window.Resources>
+
     <Grid>
-        <StackPanel HorizontalAlignment="Left"  Width="238" Background="#FFFFCA05">
-            <TextBlock TextWrapping="Wrap" Text="WE THE NORTH" VerticalAlignment="Bottom" Margin="0,45,0,0" HorizontalAlignment="Center" DockPanel.Dock="Top" FontFamily="Fragua" FontWeight="Bold" FontSize="36" FontStyle="Italic" >
+        <StackPanel HorizontalAlignment="Left"  Width="238" Background="#FFFFCA05" Margin="0,0,0,52">
+
+            <TextBlock Style="{StaticResource ScaleStyle}" RenderTransformOrigin="0.5,0.5" TextWrapping="Wrap" Text="WE THE NORTH" VerticalAlignment="Bottom" Margin="0,45,0,0" HorizontalAlignment="Center" DockPanel.Dock="Top" FontFamily="Fragua" FontWeight="Bold" FontSize="36" FontStyle="Italic" >
                 <TextBlock.Effect>
                     <DropShadowEffect BlurRadius="25"/>
                 </TextBlock.Effect>
             </TextBlock>
 
-            <Button x:Name="HomeButton" Content="HOME" FontFamily="Fragua" FontSize="36" FontWeight="Bold" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Margin="0,61,0,0" Click="HomeClick"/>
-            <Button x:Name="HistoryButton" Content="HISTORY" FontFamily="Fragua" FontSize="36" FontWeight="Bold" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Margin="0,20,0,0" Click="History"/>
-            <Button x:Name="PlayersButton" Content="PLAYERS" FontFamily="Fragua" FontSize="36" FontWeight="Bold" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Margin="0,20,0,0" Click="PlayersClick"/>
-            <Button Content="PHOTOS" FontFamily="Fragua" FontSize="36" FontWeight="Bold" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Margin="0,20,0,0" Click="PhotoClick"/>
-            <Button Content="NEXT GAME" FontFamily="Fragua" FontSize="36" FontWeight="Bold" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Margin="0,20,0,0" Click="ResultsClick"/>
+            <Button Style="{StaticResource MyButtonStyle}" RenderTransformOrigin="0.5,0.5" x:Name="HomeButton" Content="HOME" FontFamily="Fragua" FontSize="32" FontWeight="Bold" BorderBrush="{x:Null}" Foreground="White" Margin="0,61,0,0" Click="HomeClick"/>
+            <Button Style="{StaticResource MyButtonStyle}" RenderTransformOrigin="0.5,0.5" x:Name="HistoryButton" Content="HISTORY" FontFamily="Fragua" FontSize="32" FontWeight="Bold" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Margin="0,15,0,0" Click="History"/>
+            <Button Style="{StaticResource MyButtonStyle}" RenderTransformOrigin="0.5,0.5" x:Name="DefPlayersButton" Content="DEFENSIVE PLAYERS" FontFamily="Fragua" FontSize="24" FontWeight="Bold" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Margin="0,15,0,0" Click="DefPlayersClick"/>
+            <Button Style="{StaticResource MyButtonStyle}" RenderTransformOrigin="0.5,0.5" x:Name="OffPlayersButton" Content="OFFENSIVE PLAYERS" FontFamily="Fragua" FontSize="24" FontWeight="Bold" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Margin="0,15,0,0" Click="OffPlayersClick"/>
+            <Button Style="{StaticResource MyButtonStyle}" RenderTransformOrigin="0.5,0.5" Content="PHOTOS" FontFamily="Fragua" FontSize="32" FontWeight="Bold" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Margin="0,15,0,0" Click="PhotoClick"/>
+            <Button Style="{StaticResource MyButtonStyle}" RenderTransformOrigin="0.5,0.5" Content="NEXT GAME" FontFamily="Fragua" FontSize="32" FontWeight="Bold" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Margin="0,15,0,0" Click="ResultsClick"/>
 
         </StackPanel>
         <DockPanel Height="9" LastChildFill="False" Margin="230,0,0,0" VerticalAlignment="Top" Background="#FFFFCA05"/>
         <DockPanel HorizontalAlignment="Left" Height="120" LastChildFill="False" Margin="238,9,0,0" VerticalAlignment="Top" Width="718" Background="Black">
-            <Image VerticalAlignment="Center" Source="C:\Users\Lenovo\Desktop\seahawks app\Warstwa 4.png" HorizontalAlignment="Center" Width="390" Margin="65,7,0,0"/>
-            <Image Height="39" VerticalAlignment="Center" Width="40" Source="C:\Users\Lenovo\Desktop\seahawks app\Logo\FB.png" HorizontalAlignment="Center" Margin="42,0,0,13"/>
-            <Image Height="39" VerticalAlignment="Center" Width="40" Source="C:\Users\Lenovo\Desktop\seahawks app\Logo\IN.png" HorizontalAlignment="Center" Margin="42,-13,0,0"/>
+
+            <Image Style="{StaticResource ScaleStyleImage}" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Center" Source="Files/Logo/Warstwa 4.png" HorizontalAlignment="Center" Width="390" Margin="65,7,0,0" IsEnabled="False" Cursor="None"/>
+            <Button Style="{StaticResource MyButtonStyle}" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}" Click="FB" Height="39" VerticalAlignment="Center" Width="40" HorizontalAlignment="Center" Margin="42,-13,0,0">
+                <Button.Background>
+                    <ImageBrush ImageSource="Files/Logo/FB.png"/>
+                </Button.Background>
+            </Button>
+
+            <Button Style="{StaticResource MyButtonStyle}" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}" Click="FB" Height="39" VerticalAlignment="Center" Width="40" HorizontalAlignment="Center" Margin="42,-13,0,0">
+                <Button.Background>
+                    <ImageBrush ImageSource="Files/Logo/IN.png"/>
+                </Button.Background>
+            </Button>
         </DockPanel>
         <DockPanel HorizontalAlignment="Left" Height="388" LastChildFill="False" Margin="238,129,0,0" VerticalAlignment="Top" Width="718">
             <ContentControl Content="{Binding}" Width="718" HorizontalAlignment="Center" VerticalAlignment="Center" Height="388" />
 
         </DockPanel>
+        <DockPanel HorizontalAlignment="Left" Height="52" LastChildFill="False" Margin="0,465,0,0" VerticalAlignment="Top" Width="238" Background="#FFFFCA05">
+            <TextBlock Text="Mady by /Dajnowicz" FontFamily="Fragua" FontSize="16" FontWeight="Bold" Background="{x:Null}"  Foreground="White"  Width="175" HorizontalAlignment="Center" VerticalAlignment="Center" Height="23" TextAlignment="Center" Margin="6,18,0,17"/>
+            <Button Style="{StaticResource MyButtonStyle}" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}" Click="GH" VerticalAlignment="Center" HorizontalAlignment="Center" Height="34" Width="36" Margin="5,8,5,10">
+                <Button.Background>
+                    <ImageBrush ImageSource="Files/Logo/github.png"/>
+                </Button.Background>
+            </Button>
+        </DockPanel>
+
     </Grid>
 </Window>

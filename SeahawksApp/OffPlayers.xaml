@@ -1,0 +1,76 @@
+﻿<UserControl x:Class="SeahawksApp.OffPlayers"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SeahawksApp"
+             mc:Ignorable="d" 
+            d:DesignHeight="388" d:DesignWidth="718">
+    <UserControl.Resources>
+        <Style x:Key="ScaleStyleImage" TargetType="Image">
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Grid.ZIndex" Value="1"/>
+                    <Setter Property="RenderTransform">
+                        <Setter.Value>
+                            <ScaleTransform ScaleX="1.05" ScaleY="1.05"/>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="MyButtonStyle" TargetType="Button">
+            <Setter Property="OverridesDefaultStyle" Value="True"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Name="border" 
+                            Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Cursor" Value="Hand"/>
+                                <Setter Property="Grid.ZIndex" Value="1"/>
+                                <Setter Property="RenderTransform">
+                                    <Setter.Value>
+                                        <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+
+    <Grid Background="Black">
+
+        <StackPanel HorizontalAlignment="Left" Height="280" VerticalAlignment="Top" Width="425">
+            <Image x:Name="image" Style="{StaticResource ScaleStyleImage}" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top" Source="Files/Players/OFF/2.png" Margin="20,40,0,0"/>
+
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Left" Height="295" Margin="425,0,0,0" VerticalAlignment="Top" Width="293">
+            <TextBlock x:Name="name" TextWrapping="Wrap" Text="Philip Juhlin" Background="Black" Foreground="#FFFFCA05" TextAlignment="Center" FontWeight="Bold" FontFamily="Fragua" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="27,100,27,0" Height="110"/>
+            <TextBlock x:Name="pos" TextWrapping="Wrap" Text="Quarterback" Background="Black" Foreground="White" TextAlignment="Center" FontWeight="Bold" FontFamily="Fragua" FontSize="36" Margin="30,0,33,0" Height="65"/>
+
+
+        </StackPanel>
+        <DockPanel HorizontalAlignment="Left" Height="78" LastChildFill="False" Margin="10,300,0,0" VerticalAlignment="Top" Width="708">
+            <Button  Style="{StaticResource MyButtonStyle}" RenderTransformOrigin="0.5,0.5" Height="53" Click="Prev" Width="122" BorderBrush="{x:Null}" Foreground="{x:Null}" Margin="130,5,5,5">
+                <Button.Background>
+                    <ImageBrush ImageSource="Files/Players/PREVIOUS.png"/>
+                </Button.Background>
+            </Button>
+            <Button  Style="{StaticResource MyButtonStyle}" RenderTransformOrigin="0.5,0.5" Height="53" Click="Next" Width="122" BorderBrush="{x:Null}" Foreground="{x:Null}" DockPanel.Dock="Right" Margin="5,5,99,5">
+                <Button.Background>
+                    <ImageBrush ImageSource="Files/Players/NEXT.png"/>
+                </Button.Background>
+            </Button>
+        </DockPanel>
+    </Grid>
+</UserControl>

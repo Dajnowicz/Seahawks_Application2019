@@ -23,6 +23,16 @@ namespace SeahawksApp
         public Players()
         {
             InitializeComponent();
+            DataContext = new DefPlayers();
+
         }
+
+        private void DefPlayersClick(object sender, RoutedEventArgs e)
+        {
+            DataContext = new Players();
+            
+
+        }
+
     }
 }

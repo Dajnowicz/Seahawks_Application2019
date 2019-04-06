@@ -4,18 +4,33 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:SeahawksApp"
+             
              mc:Ignorable="d" 
              d:DesignHeight="388" d:DesignWidth="718">
+
+    <UserControl.Resources>
+
+
+        <DataTemplate x:Name="DefPlayersTemplate" DataType="{x:Type local:DefPlayers}"/>
+    </UserControl.Resources>
+    
     <Grid>
-        <StackPanel HorizontalAlignment="Left" Height="388" VerticalAlignment="Top" Width="367" Background="Black">
+        <StackPanel HorizontalAlignment="Left" Height="388" VerticalAlignment="Top" Width="225" Background="Black">
             <Image Source="C:\Users\Lenovo\Desktop\seahawks app\Players\Shield.png" Width="222" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,71,0,0" 
                    />
         </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="388" Margin="367,0,0,0" VerticalAlignment="Top" Width="351" Background="Black">
+        <StackPanel HorizontalAlignment="Left" Height="388" Margin="460,0,0,0" VerticalAlignment="Top" Width="258" Background="Black">
             <Image Source="C:\Users\Lenovo\Desktop\seahawks app\Players\swords.png" HorizontalAlignment="Center" VerticalAlignment="Center" Width="222" Height="258" Margin="0,70,0,0"/>
         </StackPanel>
+        
+        
+        <Button Content="Button" HorizontalAlignment="Left" Margin="315,340,0,0" VerticalAlignment="Top" Width="75" Click="DefPlayersClick"/>
+        
+
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="DEFENSIVE PLAYERS" VerticalAlignment="Top" Margin="-5,130,0,0" FontFamily="Fragua" FontWeight="Bold" FontSize="48" Foreground="White" TextAlignment="Center" Width="372"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="OFFENSIVE PLAYERS" VerticalAlignment="Top" Margin="372,130,0,0" FontFamily="Fragua" FontWeight="Bold" FontSize="48" Foreground="White" TextAlignment="Center" Width="346"/>
+
+
 
     </Grid>
 </UserControl>

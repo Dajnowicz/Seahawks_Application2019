@@ -45,12 +45,7 @@ namespace SeahawksApp
             // MenuSlider.Height = HistoryButton.Height;
         }
 
-        private void PlayersClick(object sender, RoutedEventArgs e)
-        {
-            DataContext = new Players();
 
-            // MenuSlider.Height = PlayersButton.Height;
-        }
 
         private void PhotoClick(object sender, RoutedEventArgs e)
         {
@@ -60,6 +55,29 @@ namespace SeahawksApp
         private void ResultsClick(object sender, RoutedEventArgs e)
         {
             DataContext = new Results();
+        }
+
+        private void DefPlayersClick(object sender, RoutedEventArgs e)
+        {
+            DataContext = new DefPlayers();
+        }
+
+        private void OffPlayersClick(object sender, RoutedEventArgs e)
+        {
+            DataContext = new OffPlayers();
+        }
+
+        private void FB(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.facebook.com/SeahawksGdynia");
+        }
+        private void IN(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.instagram.com/SeahawksGdynia");
+        }
+        private void GH(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.github.com/Dajnowicz");
         }
     }
 }

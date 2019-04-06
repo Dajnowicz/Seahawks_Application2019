@@ -7,8 +7,23 @@
              mc:Ignorable="d" 
           d:DesignHeight="388" d:DesignWidth="718">
 
+    
+
+
+    <UserControl.Resources>
+
+        <ResourceDictionary Source="Resources.xaml" />
+
+
+
+
+    </UserControl.Resources>
+
     <Grid Margin="0,0,0,-307" Background="Black">
-        <ScrollViewer Margin="0,0,0,205" Background="Black">
+        <ScrollViewer  Margin="0,0,0,315">
+            <ScrollViewer.Background>
+                <ImageBrush/>
+            </ScrollViewer.Background>
 
             <ItemsControl >
                 <DockPanel Height="60" LastChildFill="False">
@@ -18,16 +33,16 @@
 
                 </DockPanel>
                 <DockPanel Height="190" LastChildFill="False" Margin="0,0,0,30">
-                    <Image VerticalAlignment="Top" Source="C:\Users\Lenovo\Desktop\seahawks app\Photos\1.jpg" Margin="72,0,30,0"/>
-                    <Image VerticalAlignment="Top" Source="C:\Users\Lenovo\Desktop\seahawks app\Photos\2.jpg" Margin="0,0,30,0"/>
+                    <Image Style="{StaticResource ScaleStyleImage}" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top" Source="Files/Photos/1.jpg" Margin="72,0,30,0"/>
+                    <Image Style="{StaticResource ScaleStyleImage}" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top" Source="Files/Photos/2.jpg" Margin="0,0,30,0"/>
                 </DockPanel>
                 <DockPanel Height="190" LastChildFill="False" Margin="0,0,0,30">
-                    <Image VerticalAlignment="Top" Source="C:\Users\Lenovo\Desktop\seahawks app\Photos\3.jpg" Margin="72,0,30,0"/>
-                    <Image VerticalAlignment="Top" Source="C:\Users\Lenovo\Desktop\seahawks app\Photos\4.jpg" Margin="0,0,30,0"/>
+                    <Image Style="{StaticResource ScaleStyleImage}" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top" Source="Files/Photos/3.jpg" Margin="72,0,30,0"/>
+                    <Image Style="{StaticResource ScaleStyleImage}" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top" Source="Files/Photos/4.jpg" Margin="0,0,30,0"/>
                 </DockPanel>
                 <DockPanel Height="190" LastChildFill="False" Margin="0,0,0,30">
-                    <Image VerticalAlignment="Top" Source="C:\Users\Lenovo\Desktop\seahawks app\Photos\5.jpg" Margin="72,0,30,0"/>
-                    <Image VerticalAlignment="Top" Source="C:\Users\Lenovo\Desktop\seahawks app\Photos\6.jpg" Margin="0,0,30,0"/>
+                    <Image Style="{StaticResource ScaleStyleImage}" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top" Source="Files/Photos/5.jpg" Margin="72,0,30,0"/>
+                    <Image Style="{StaticResource ScaleStyleImage}" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top" Source="Files/Photos/6.jpg" Margin="0,0,30,0"/>
                 </DockPanel>
             </ItemsControl>
 

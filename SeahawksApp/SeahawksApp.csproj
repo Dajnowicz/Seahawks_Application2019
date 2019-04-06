@@ -55,9 +55,25 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DefPlayers.xaml.cs">
+      <DependentUpon>DefPlayers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OffPlayers.xaml.cs">
+      <DependentUpon>OffPlayers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page1.xaml.cs">
+      <DependentUpon>Page1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Player3.xaml.cs">
+      <DependentUpon>Player3.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Results.xaml.cs">
       <DependentUpon>Results.xaml</DependentUpon>
     </Compile>
+    <Page Include="DefPlayers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="History.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -84,11 +100,27 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="OffPlayers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Page1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Photos.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Player3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Players.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -121,6 +153,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Files\psd\SEAHWKS History.psd" />
+    <None Include="Files\psd\SEAHWKS HOME.psd" />
+    <None Include="Files\psd\SEAHWKS NEXT_GAME.psd" />
+    <None Include="Files\psd\SEAHWKS PHOTOS.psd" />
+    <None Include="Files\psd\SEAHWKS PLAYERS.psd" />
+    <None Include="Files\psd\SEAHWKS PLAYERS_OFFENSIVE.psd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -130,16 +168,105 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="54523392_2607914495917217_6090811096619286528_n.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="54523392_2607914495917217_6090811096619286528_n1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="54523392_2607914495917217_6090811096619286528_n2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Tychy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Files\History\History.png" />
+    <Resource Include="Files\HOME\HomePic.jpg" />
+    <Resource Include="Files\HOME\icon.png" />
+    <Resource Include="Files\Logo\FB.png" />
+    <Resource Include="Files\Logo\IN.png" />
+    <Resource Include="Files\Logo\shield-contour-logo-19A0E754E6-seeklogo.com.png" />
+    <Resource Include="Files\Logo\sword-logo-png-2.png" />
+    <Resource Include="Files\Logo\Warstwa 4.png" />
+    <Resource Include="Files\NextGame\Seahawks.png" />
+    <Resource Include="Files\NextGame\smoke.png" />
+    <Resource Include="Files\NextGame\Tychy.png" />
+    <Resource Include="Files\Photos\1.jpg" />
+    <Resource Include="Files\Photos\2.jpg" />
+    <Resource Include="Files\Photos\3.jpg" />
+    <Resource Include="Files\Photos\4.jpg" />
+    <Resource Include="Files\Photos\5.jpg" />
+    <Resource Include="Files\Photos\6.jpg" />
+    <Resource Include="Files\Players\Shield.png" />
+    <Resource Include="Files\Players\swords.png" />
+    <Resource Include="Files\psd\SEAHWKS History.jpg" />
+    <Resource Include="Files\psd\SEAHWKS HOME.jpg" />
+    <Resource Include="Files\psd\SEAHWKS NEXT_GAME.jpg" />
+    <Resource Include="Files\psd\SEAHWKS PHOTOS.jpg" />
+    <Resource Include="Files\psd\SEAHWKS PLAYERS.jpg" />
+    <Resource Include="Files\psd\SEAHWKS PLAYERS_OFFENSIVE.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Files\Players\PREVIOUS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Files\Players\NEXT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Files\Players\75.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Files\Logo\github.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Files\Players\OFF\10.jpg" />
+    <Resource Include="Files\Players\OFF\16.jpg" />
+    <Resource Include="Files\Players\OFF\23.jpg" />
+    <Resource Include="Files\Players\OFF\3.jpg" />
+    <Resource Include="Files\Players\OFF\34.jpg" />
+    <Resource Include="Files\Players\OFF\40.jpg" />
+    <Resource Include="Files\Players\OFF\44.jpg" />
+    <Resource Include="Files\Players\OFF\46.jpg" />
+    <Resource Include="Files\Players\OFF\61.jpg" />
+    <Resource Include="Files\Players\OFF\65.jpg" />
+    <Resource Include="Files\Players\OFF\68.jpg" />
+    <Resource Include="Files\Players\OFF\69.jpg" />
+    <Resource Include="Files\Players\OFF\7.jpg" />
+    <Resource Include="Files\Players\OFF\71.jpg" />
+    <Resource Include="Files\Players\OFF\73.jpg" />
+    <Resource Include="Files\Players\OFF\77.jpg" />
+    <Resource Include="Files\Players\OFF\78.jpg" />
+    <Resource Include="Files\Players\OFF\79.jpg" />
+    <Resource Include="Files\Players\OFF\8.jpg" />
+    <Resource Include="Files\Players\OFF\81.jpg" />
+    <Resource Include="Files\Players\OFF\84.jpg" />
+    <Resource Include="Files\Players\OFF\86.jpg" />
+    <Resource Include="Files\Players\OFF\87.jpg" />
+    <Resource Include="Files\Players\OFF\89.jpg" />
+    <Resource Include="Files\Players\OFF\94.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Files\Players\OFF\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Files\Players\DEF\1.jpg" />
+    <Resource Include="Files\Players\DEF\11.jpg" />
+    <Resource Include="Files\Players\DEF\15.jpg" />
+    <Resource Include="Files\Players\DEF\17.jpg" />
+    <Resource Include="Files\Players\DEF\18.jpg" />
+    <Resource Include="Files\Players\DEF\21.jpg" />
+    <Resource Include="Files\Players\DEF\27.jpg" />
+    <Resource Include="Files\Players\DEF\29.jpg" />
+    <Resource Include="Files\Players\DEF\32.jpg" />
+    <Resource Include="Files\Players\DEF\36.jpg" />
+    <Resource Include="Files\Players\DEF\37.jpg" />
+    <Resource Include="Files\Players\DEF\39.jpg" />
+    <Resource Include="Files\Players\DEF\41.jpg" />
+    <Resource Include="Files\Players\DEF\42.jpg" />
+    <Resource Include="Files\Players\DEF\43.jpg" />
+    <Resource Include="Files\Players\DEF\47.jpg" />
+    <Resource Include="Files\Players\DEF\5.jpg" />
+    <Resource Include="Files\Players\DEF\50.jpg" />
+    <Resource Include="Files\Players\DEF\52.jpg" />
+    <Resource Include="Files\Players\DEF\53.jpg" />
+    <Resource Include="Files\Players\DEF\57.jpg" />
+    <Resource Include="Files\Players\DEF\75.jpg" />
+    <Resource Include="Files\Players\DEF\9.jpg" />
+    <Resource Include="Files\Players\DEF\91.jpg" />
+    <Resource Include="Files\Players\DEF\93.jpg" />
+    <Resource Include="Files\Players\DEF\98.jpg" />
+    <Resource Include="Files\Players\DEF\99.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
