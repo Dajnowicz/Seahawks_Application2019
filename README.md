@@ -14,9 +14,10 @@ I do not own any rights to any pictures used in app. They are used for education
 
 ~~3.Test the bugs.~~ **DONE** *06.04*
 
-~~4. Deploy~~~ **DONE** 
+~~4. Deploy~~ **DONE** 
 
 Version 1.0 *06.04*
+
 
 5. New Features (Version 2.0)
 
@@ -59,7 +60,7 @@ A little bit changed project in process of production. I have added different si
 *Button Style*
 
 I did not like the basic hover effect built in the wpf library so i had to chaned it. 
-```
+```XAML
 ...
 <ControlTemplate TargetType="Button">
                         <Border Name="border" 
@@ -82,9 +83,11 @@ I did not like the basic hover effect built in the wpf library so i had to chane
 ```
 
 *Players Carousel*
-I used basic switch case to change number of players. Thats how i got them to rotate and do full run from 0 to n where n is equals to number of players. 
+
+used basic switch case to change number of players. Thats how i got them to rotate and do full run from 0 to n where n is equals to number of players. 
 
 *Scroll View*
+
 Changed the basic scroller to my custom one. Code can by found in [this directory](https://github.com/Dajnowicz/Seahawks_Application2019/blob/master/SeahawksApp/Resources.xaml)
 
 **IDEAS**
