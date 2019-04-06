@@ -93,15 +93,16 @@ Changed the basic scroller to my custom one. Code can by found in [this director
 
 ## 3. Deploy
 
-First deploy. App can be found [this directory](https://github.com/Dajnowicz/Seahawks_Application2019/blob/master/SeahawksApp/Resources.xaml).
+First deploy. App can be found [this directory](https://github.com/Dajnowicz/Seahawks_Application2019/tree/master/SeahawksApp/Deploy).
+
 ## 4. New Features
 
 For next versions of apps I am planning to do implement these features.
 **IDEAS**
-- [x] \ Different type of Scroller on Photos Section.
-- [x] \Add more Photos. 
-- [ ] \ Add menu in photos section in order to change pictures from different games.
-- [x] \ Change hover effect on menu. 
-- [ ] \ Add table with all scores from the league.
+- [x]  Different type of Scroller on Photos Section.
+- [x]  Add more Photos. 
+- [ ]  Add menu in photos section in order to change pictures from different games.
+- [x]  Change hover effect on menu. 
+- [ ]  Add table with all scores from the league.
 
 
